@@ -35,85 +35,6 @@ MainWindow::MainWindow(QWidget* parent)
     initEnglishLayout();
     currentLayout = &englishLayout;
     updateKeyboardLayout();
-
-
-    /*ui->pushButton1->setFocusPolicy(Qt::StrongFocus);
-    english_map[32] = ui->pushButton34;
-    english_map[39] = ui->pushButton23;
-    english_map[44] = ui->pushButton31;
-    english_map[46] = ui->pushButton32;
-    english_map[47] = ui->pushButton33;
-    english_map[59] = ui->pushButton22;
-    english_map[65] = ui->pushButton13;
-    english_map[66] = ui->pushButton28;
-    english_map[67] = ui->pushButton26;
-    english_map[68] = ui->pushButton15;
-    english_map[69] = ui->pushButton3;
-    english_map[70] = ui->pushButton16;
-    english_map[71] = ui->pushButton17;
-    english_map[72] = ui->pushButton18;
-    english_map[73] = ui->pushButton8;
-    english_map[74] = ui->pushButton19;
-    english_map[75] = ui->pushButton20;
-    english_map[76] = ui->pushButton21;
-    english_map[77] = ui->pushButton30;
-    english_map[78] = ui->pushButton29;
-    english_map[79] = ui->pushButton9;
-    english_map[80] = ui->pushButton10;
-    english_map[81] = ui->pushButton1;
-    english_map[82] = ui->pushButton4;
-    english_map[83] = ui->pushButton14;
-    english_map[84] = ui->pushButton5;
-    english_map[85] = ui->pushButton7;
-    english_map[86] = ui->pushButton27;
-    english_map[87] = ui->pushButton2;
-    english_map[88] = ui->pushButton25;
-    english_map[89] = ui->pushButton6;
-    english_map[90] = ui->pushButton24;
-    english_map[91] = ui->pushButton11;
-    english_map[93] = ui->pushButton12;
-
-    english.push_back(" ");	 // 32
-    english.push_back("'");	 // 39
-    english.push_back(",");	 // 44
-    english.push_back(".");	 // 46
-    english.push_back("/");	 // 47
-    english.push_back(";");	 // 59
-    english.push_back("a");	 // 65
-    english.push_back("b");	 // 66
-    english.push_back("c");	 // 67
-    english.push_back("d");	 // 68
-    english.push_back("e");	 // 69
-    english.push_back("f");	 // 70
-    english.push_back("g");	 // 71
-    english.push_back("h");	 // 72
-    english.push_back("i");	 // 73
-    english.push_back("j");	 // 74
-    english.push_back("k");	 // 75
-    english.push_back("l");	 // 76
-    english.push_back("m");	 // 77
-    english.push_back("n");	 // 78
-    english.push_back("o");	 // 79
-    english.push_back("p");	 // 80
-    english.push_back("q");	 // 81
-    english.push_back("r");	 // 82
-    english.push_back("s");	 // 83
-    english.push_back("t");	 // 84
-    english.push_back("u");	 // 85
-    english.push_back("v");	 // 86
-    english.push_back("w");	 // 87
-    english.push_back("x");	 // 88
-    english.push_back("y");	 // 89
-    english.push_back("z");	 // 90
-    english.push_back("[");	 // 91
-    english.push_back("]");	 // 93
-
-    auto it = english_map.constBegin();
-    for (int i = 0; it != english_map.constEnd(); ++it, ++i) {
-        if (i < english.size()) {
-            it.value()->setText(english[i]);
-        }
-    }*/
 }
 
 MainWindow::~MainWindow() {
@@ -458,8 +379,8 @@ void MainWindow::initGermanLayout() {
 
     germanLayout.characters = {"q", "w", "e", "r", "t", "z", "u", "i", "o",
                                "p", "ü", "+", "a", "s", "d", "f", "g", "h",
-                               "j", "k", "l", "ö", "ä", "#", "y", "x", "c",
-                               "v", "b", "n", "m", ",", ".", "-", " "};
+                               "j", "k", "l", "ö", "ä", "y", "x", "c", "v",
+                               "b", "n", "m", ",", ".", "-", " "};
 }
 
 void MainWindow::initFrenchLayout() {
@@ -467,8 +388,8 @@ void MainWindow::initFrenchLayout() {
 
     frenchLayout.characters = {"a", "z", "e", "r", "t", "y", "u", "i", "o",
                                "p", "^", "$", "q", "s", "d", "f", "g", "h",
-                               "j", "k", "l", "m", "ù", "*", "w", "x", "c",
-                               "v", "b", "n", ",", ";", ":", "!", " "};
+                               "j", "k", "l", "m", "ù", "w", "x", "c", "v",
+                               "b", "n", ",", ";", ":", "!", " "};
 }
 
 void MainWindow::initArabicLayout() {
